@@ -1,0 +1,17 @@
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.csproj.AssemblyReference.cache
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.GeneratedMSBuildEditorConfig.editorconfig
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.AssemblyInfoInputs.cache
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.AssemblyInfo.cs
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.csproj.CoreCompileInputs.cache
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\BotTelegram.exe
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\BotTelegram.deps.json
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\BotTelegram.runtimeconfig.json
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\BotTelegram.dll
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\BotTelegram.pdb
+D:\BotTelegram\BotTelegram\bin\Debug\net9.0\Telegram.Bot.dll
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTeleg.A1339E09.Up2Date
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.dll
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\refint\BotTelegram.dll
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.pdb
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.genruntimeconfig.cache
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\ref\BotTelegram.dll
