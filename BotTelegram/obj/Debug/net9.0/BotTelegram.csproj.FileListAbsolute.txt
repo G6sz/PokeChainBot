@@ -15,3 +15,4 @@ D:\BotTelegram\BotTelegram\obj\Debug\net9.0\refint\BotTelegram.dll
 D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.pdb
 D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.genruntimeconfig.cache
 D:\BotTelegram\BotTelegram\obj\Debug\net9.0\ref\BotTelegram.dll
+D:\BotTelegram\BotTelegram\obj\Debug\net9.0\BotTelegram.sourcelink.json
