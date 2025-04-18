@@ -1,0 +1,25 @@
+# Etapa de build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /app
+
+# Copia tudo para a imagem
+COPY . ./
+
+# Restaura os pacotes
+RUN dotnet restore BotTelegram.csproj
+
+# Publica o projeto (gera o executável)
+RUN dotnet publish BotTelegram.csproj -c Release -o /app/publish
+
+# Etapa de runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
+WORKDIR /app
+
+# Copia os arquivos publicados da imagem anterior
+COPY --from=build /app/publish .
+
+# Expõe a porta, caso precise (não obrigatória pra bots, mas boa prática)
+EXPOSE 80
+
+# Comando de inicialização
+ENTRYPOINT ["dotnet", "BotTelegram.dll"]
