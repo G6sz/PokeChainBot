@@ -3,16 +3,16 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
 WORKDIR /app
 
-# Copia tudo
+# Copia tudo para o container
 COPY . .
 
 # Vai para a pasta onde está o projeto
 WORKDIR /app/BotTelegram
 
-# Restaura pacotes
+# Restaura os pacotes NuGet
 RUN dotnet restore BotTelegram.csproj
 
-# Publica a aplicação
+# Publica o projeto
 RUN dotnet publish BotTelegram.csproj -c Release -o /app/out
 
 # Etapa de runtime
@@ -20,8 +20,10 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 WORKDIR /app
 
+# Copia o build da etapa anterior
 COPY --from=build /app/out .
 
+# Define porta e entrada
 ENV PORT=8080
 EXPOSE 8080
 
