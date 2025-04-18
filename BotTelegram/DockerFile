@@ -1,28 +1,28 @@
-# Imagem base do SDK do .NET
+# Etapa de build
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 
-# Define a pasta de trabalho
 WORKDIR /app
 
-# Copia os arquivos para dentro do container
+# Copia tudo
 COPY . .
 
-# Restaura as dependências
+# Vai para a pasta onde está o projeto
+WORKDIR /app/BotTelegram
+
+# Restaura pacotes
 RUN dotnet restore BotTelegram.csproj
 
-# Publica o app
+# Publica a aplicação
 RUN dotnet publish BotTelegram.csproj -c Release -o /app/out
 
-# Imagem final para rodar o app
+# Etapa de runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 
 WORKDIR /app
 
 COPY --from=build /app/out .
 
-# Expõe a porta que o Railway usa
 ENV PORT=8080
 EXPOSE 8080
 
-# Usa a variável de ambiente PORT
 ENTRYPOINT ["dotnet", "BotTelegram.dll"]
